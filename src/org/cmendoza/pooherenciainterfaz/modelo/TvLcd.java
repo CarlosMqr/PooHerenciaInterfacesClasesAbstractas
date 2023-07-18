@@ -10,9 +10,11 @@ public class TvLcd extends Electronico {
     }
 
 /////////// GETTER ANS SETTER //////
+
     private String getPulgadas(){
         return this.pulgadas;
     }
+
 ////////// MÉTODOS ////////////////
 
     @Override
