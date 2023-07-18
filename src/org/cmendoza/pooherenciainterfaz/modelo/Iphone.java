@@ -1,6 +1,8 @@
 package org.cmendoza.pooherenciainterfaz.modelo;
 
-public class Iphone extends Electronico{
+import org.cmendoza.pooherenciainterfaz.interfaz.IProducto;
+
+public class Iphone extends Electronico implements IProducto {
     private String modelo;
     private String color;
     //////////// CONSTRUCTOR ////////////
@@ -12,6 +14,15 @@ public class Iphone extends Electronico{
     }
 
 /////////// GETTER ANS SETTER //////
+
+    public String getModelo() {
+        return this.modelo;
+    }
+
+    public String getColor() {
+        return this.color;
+    }
+
 ////////// MÉTODOS ////////////////
 
     @Override

@@ -1,6 +1,8 @@
 package org.cmendoza.pooherenciainterfaz.modelo;
 
-abstract public class Electronico extends Producto {
+import org.cmendoza.pooherenciainterfaz.interfaz.IElectronico;
+
+abstract public class Electronico extends Producto implements IElectronico {
     private String Fabricante;
     //////////// CONSTRUCTOR ////////////
 
@@ -10,5 +12,11 @@ abstract public class Electronico extends Producto {
     }
 
 /////////// GETTER ANS SETTER //////
+
+    @Override
+    public String getFabricante() {
+        return this.Fabricante;
+    }
+
 ////////// MÉTODOS ////////////////
 }

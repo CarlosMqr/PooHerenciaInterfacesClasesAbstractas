@@ -10,5 +10,13 @@ public class Comic extends Libro{
     }
 
 /////////// GETTER ANS SETTER //////
+    public String getPersonaje(){
+        return this.personaje;
+    }
 ////////// MÉTODOS ////////////////
+
+    @Override
+    public double getPrecioVenta() {
+        return getPrecio() * 0.70;
+    }
 }
