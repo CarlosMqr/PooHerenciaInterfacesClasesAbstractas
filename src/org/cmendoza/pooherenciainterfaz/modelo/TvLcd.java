@@ -1,17 +1,17 @@
 package org.cmendoza.pooherenciainterfaz.modelo;
 
 public class TvLcd extends Electronico {
-    private String pulgadas;
+    private int pulgadas;
     //////////// CONSTRUCTOR ////////////
 
-    public TvLcd(int precio, String fabricante, String pulgadas) {
+    public TvLcd(int precio, String fabricante, int pulgadas) {
         super(precio, fabricante);
         this.pulgadas = pulgadas;
     }
 
 /////////// GETTER ANS SETTER //////
 
-    private String getPulgadas(){
+    public int getPulgadas(){
         return this.pulgadas;
     }
 
