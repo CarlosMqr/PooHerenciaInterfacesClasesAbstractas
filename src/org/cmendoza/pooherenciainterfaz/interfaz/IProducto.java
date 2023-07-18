@@ -1,6 +1,8 @@
 package org.cmendoza.pooherenciainterfaz.interfaz;
 
+import org.cmendoza.pooherenciainterfaz.modelo.Producto;
+
 public interface IProducto {
     int getPrecio();
-    int getPrecioVenta();
+    double getPrecioVenta();
 }
